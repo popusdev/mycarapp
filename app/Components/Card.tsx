@@ -1,12 +1,12 @@
+import React from "react";
 import { StyleSheet, View } from "react-native";
-import React, { ReactNode } from "react";
 
 export default function Card({ children }: { children: React.ReactNode }){
 
     return (
         <View style={styles.container}>
             <View style={styles.card}>
-                <View style={styles.content}>{children}</View>
+                <View>{children}</View>
             </View>
         </View>
     )
@@ -20,12 +20,11 @@ const styles = StyleSheet.create({
   card: {
     width: "100%",
     maxWidth: 420,
+    padding: 16,
     alignSelf: "center",
     borderRadius: 16,
     backgroundColor: '#dbdbdb',
-  },
-  content: {
-    flex: 1
+    display: 'flex',
   },
   footer: {
   paddingHorizontal: 16,

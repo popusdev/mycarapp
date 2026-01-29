@@ -1,10 +1,27 @@
-import { Text, StyleSheet } from "react-native";
-import Card from '../../Components/Card';
+import { Image, StyleSheet, Text, View } from 'react-native';
+import Card from '../Components/Card';
 
 export default function Index() {
   return (
-    <Card>
-      <Text style={{color: 'black'}}>siema</Text>
-    </Card>
+    <View style={styles.main}>
+      <Card>
+        <View style={styles.photo}>
+          <Image src=''></Image>
+          <Text>asdasdasda</Text>
+        </View>
+        <View>
+          <Text>Siema</Text>
+        </View>
+      </Card>
+    </View>
   )
 }
+
+const styles = StyleSheet.create({
+  photo: {
+    width: "100%",
+  },
+  main: {
+
+  }
+})
